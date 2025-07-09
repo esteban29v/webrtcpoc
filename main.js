@@ -6,7 +6,15 @@ let servers = {
     iceServers:[
         {
             urls:['stun:stun1.1.google.com:19302', 'stun:stun2.1.google.com:19302']
+        },
+        // Descomenta y edita la siguiente sección para agregar tu servidor TURN:
+        
+        {
+            urls: 'turn:relay1.expressturn.com:3480', // Reemplaza con la URL/IP de tu servidor TURN
+            username: '000000002067438993',             // Reemplaza con tu usuario TURN
+            credential: 'Qmh4hKS0QAYonJwfbmgo3anIP88='         // Reemplaza con tu contraseña TURN
         }
+       
     ]
 }
 
